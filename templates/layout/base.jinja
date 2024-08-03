@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <h1>Shopping cart</h1>
+
+    <h3><a href="/posts">回首頁</a></h3>
+
+    {# {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <section class="flex">    
+                <p>
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                    <button> x </button>
+                </p>
+            </section>
+        {% endif %}
+    {% endwith %} #}
+
+    <main>
+        {% block content %}
+        
+        {% endblock content %}
+    </main>
+    
+  </body>
+</html>

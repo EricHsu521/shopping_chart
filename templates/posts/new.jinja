@@ -1,0 +1,28 @@
+{% extends "layout/base.jinja" %} 
+
+{% block content %} 
+    <h1>新增商品項目</h1>
+    
+    <form method="POST" action="/posts">
+        <section>
+            <div>
+                <label>商品名稱: </label>
+                <input type="text" name="title" placeholder="請輸入商品名稱">
+            </div>
+                
+            <div>
+                <label>商品價錢: </label>
+                <input type="text" name="price" placeholder="請輸入商品價錢">
+            </div>
+                
+            <div>
+                <label>商品項目描述: </label>
+                <textarea name="description"></textarea>
+            </div>
+
+            <div> 
+                <button>確定</button>
+            </div>
+        </section>
+    </form>
+{% endblock %}  
